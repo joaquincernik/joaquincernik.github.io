@@ -1,0 +1,132 @@
+<%- include('./partials/header') %>
+
+    <div class="d-flex justify-content-center">
+        <div class="container bg-white py-5 m-2 d-flex flex-column justify-content-center ">
+            <h1 class="title text-center pb-2">Registrarme</h1>
+            <form class="border-top border-secondary p-5" action="/users/register" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="dni">DNI</label>
+                        <input type="number" class="form-control" id="dni" placeholder="DNI">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input class="form-control" id="edad" type="number" placeholder="Edad">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <textarea class="form-control" id="descripcion"
+                        placeholder="Explica un poco de por que usarias esta aplicacion para viajar, ej: conocer personas nuevas o lugares nuevos"></textarea>
+                </div>
+
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Subir</span>
+                    </div>
+                    <div class="custom-file">
+                        <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg" name="foto"
+                            id="foto">
+                        <label class="custom-file-label" for="foto">Elegir foto</label>
+                    </div>
+                </div>
+                
+                <p>
+                    <a class="btn btn-primary mt-4 pb-1" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Registrar vehiculo
+                    </a>
+
+                </p>
+
+                
+                <div class="collapse" id="collapseExample">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="vehiculo">Modelo de vehiculo</label>
+                            <input type="text" class="form-control" id="vehiculo"
+                                placeholder="En caso de ser conductor, ingrese el modelo de su vehiculo">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="patente">Patente</label>
+                            <input type="text" class="form-control" id="patente" placeholder="Patente">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="capacidad">Capacidad</label>
+                        <input type="number" class="form-control" id="capacidad" placeholder="Capacidad">
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Subir</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg"
+                                        name="sedula" id="sedula">
+                                    <label class="custom-file-label" for="sedula">Sedula</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Subir</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg"
+                                        name="itv" id="itv">
+                                    <label class="custom-file-label" for="itv">ITV</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Subir</span>
+                    </div>
+                    <div class="custom-file">
+                        <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg" name="seguro"
+                            id="seguro">
+                        <label class="custom-file-label" for="seguro">Seguro</label>
+                    </div>
+                </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary bg-dark border-dark my-3">Registrarme</button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/footer') %>
